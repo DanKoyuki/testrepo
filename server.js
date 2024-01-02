@@ -20,9 +20,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(Router);
-app.get('/', (req, res) => {
-    res.status(200).json('Welcome, your app is working well');
-})
 
 // Start the server
 const PORT = process.env.PORT || 3000;
